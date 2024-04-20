@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        #completa {
+            display: flex;
+        }
+        #esquerda {
+            flex: 1;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #direita {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: center;
+            padding: 5px;
+            position: relative;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        #esquerda_cima {
+            background-color: white;
+            flex: 2;
+            display: flex;
+            align-items: center;
+        }
+        #esquerda_baixo {
+            flex: 8;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        #alinhar {
+            flex: 25;
+        }
+        #menu {
+            flex: 55;
+            display: flex;
+            justify-content: space-evenly;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        #icones {
+            flex: 20;
+            display: flex;
+            justify-content: space-around;
+        }
+      
+        #miniaturasFoto {
+            flex: 13;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        #FotoCheia {
+            flex: 78;
+            display: flex;
+            border-radius: 5px;
+            margin-left: 40px; 
+            
+            
+        }
+        #FotoCheia img {
+            max-width: 80%; 
+            height: auto; 
+            border-radius: 3px;
+            background-color: #f2f2f2;
+            padding: 6px;
+}
+        .mini>img {
+            flex: 1;
+            width: 80%;
+            border-radius: 5px; 
+            background-color: #f2f2f2; 
+            padding: 5px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        #logoHavaianas {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 190px; 
+            height: auto;
+        }
+        .favorite-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .favorite-icon .material-symbols-outlined {
+            color: red;
+            margin-right: 5px;
+            border: 2px solid red;
+            border-radius: 50%; 
+            padding: 5px; 
+        }
+        .CorProduto {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .FormatoCor {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            display: inline-block;
+            vertical-align: middle;
+            border: 3px solid #f2f2f2;
+        }
+        .Comprar {
+            border-radius: 50%; 
+            width: 120px; 
+            height: 100px; 
+            background-color: red;
+            color: white; 
+            border: none; 
+            font-size: 16px;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            cursor: pointer; 
+            outline: none; 
+            margin-top: 20px;
+        }
+        #info-lateral {
+            float: right;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="completa">
+        <div id="esquerda">
+            <div id="esquerda_cima">
+                <div id="alinhar">
+                    <span class="material-symbols-outlined">drag_handle</span>
+                </div>
+                <div  id="menu">
+                    <span>( Inicio</span>
+                    <span>Coleções</span>
+                    <span>Novidades</span>
+                    <span>Ajuda )</span> 
+                </div>
+                <div id="icones">
+                    <span class="material-symbols-outlined">favorite</span>
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+            </div>
+            <div id="esquerda_baixo">
+                <div id="miniaturasFoto">
+                    <span class="mini">
+                        <img src="ChineloFrente.jpg" alt="Chinelo Havaianas de Vista de Frente">
+                    </span>
+                    <span class="mini">
+                        <img src="ChineloDeCima.jpg" alt="Chinelo Havaianas de Vista de Cima">
+                    </span>
+                    <span class="mini">
+                        <img src="ChineloDeLado.jpg" alt="Chinelo Havaianas de Vista de Lado">
+                    </span>
+                    <span class="mini">
+                        <img src="ModeloChinelo.jpeg" alt="Modelo do Chinelo">
+                    </span>
+                    <span style="text-align: center;"  class="material-symbols-outlined">expand_more</span>
+                </div>
+                <div id="FotoCheia">
+                    <img src="ChineloFrente.jpg" alt="Chinelo Havaianas de Vista de Frente">
+                </div>
+            </div>
+        </div>
+        <div id="direita">
+            <!--Logo no canto superior-->
+            <img id="logoHavaianas" src="Logo-Havaianas.PNG" alt="Logo Havaianas">
+            <!-- Detalhes do produto -->
+            <p><strong>Inicio / Calçados / Chinelos / Chinelos Havaianas</strong></p>
+            <div class="favorite-icon">  
+                <h1>Chinelo Havaianas Top</h1>
+                <span class="material-symbols-outlined">favorite</span>
+                <br>
+            </div>
+            <p style="margin-top: 0;">Preço: <strong>R$59,99</strong></p>
+            <br>          
+            <div class="CorProduto">
+                <span>Cor: <strong>Branco</strong>
+                <br>
+                <div class="FormatoCor"></div>
+            </div>
+        
+            <div>        
+                <label for="size">Selecione o Tamanho:</label>   
+                <select name="size" id="size">
+                    <option>33/34</option>
+                    <option>35/36</option>
+                    <option>36/37</option>
+                    <option>38/39</option>
+                    <option>40/41</option>
+                    <option>41/42</option>
+                </select>
+            </div>            
+
+            <div id="info-lateral" style="position: absolute; top: 360px; right: 140px;">
+                <div>
+                    <p><strong><a href="#" style="color: black; text-decoration: underline; border-bottom: 2px solid black;">Guia</a>:</strong></p>
+                    <br>
+                    <p>DESCRIÇÃO DO PRODUTO <span style="vertical-align: bottom;"  class="material-symbols-outlined">expand_more</span></p>
+                    <p>COMPOSIÇÃO DO PRODUTO <span style="vertical-align: bottom;"  class="material-symbols-outlined">expand_more</span></p>
+                    <p>INSTRUÇÃO DO PRODUTO <span style="vertical-align: bottom;"  class="material-symbols-outlined">expand_more</span></p>
+                    <p><strong><a href="#" style="color: black; text-decoration: underline; border-bottom: 2px solid black;">Precisa de Ajuda?</a></strong></p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button class="Comprar">Comprar</button>
+        </div>
+</body>
+</html>
